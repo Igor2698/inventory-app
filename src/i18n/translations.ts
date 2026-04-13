@@ -1,0 +1,43 @@
+export const translations = {
+  en: {
+    brand: 'Inventory',
+    orders: 'Orders',
+    products: 'Products',
+    search: 'Search',
+    activeTabs: 'Active tabs',
+    type: 'Type',
+    specification: 'Specification',
+    title: 'Title',
+    warranty: 'Warranty',
+    price: 'Price',
+    order: 'Order',
+    delete: 'Delete',
+    close: 'Close',
+    cancel: 'Cancel',
+    confirmDeleteOrder: 'Are you sure you want to delete this order?',
+    productsCount: 'Products',
+    specificationValidation: 'Specification does not belong to the selected type',
+  },
+  uk: {
+    brand: 'Склад',
+    orders: 'Замовлення',
+    products: 'Продукти',
+    search: 'Пошук',
+    activeTabs: 'Активні вкладки',
+    type: 'Тип',
+    specification: 'Специфікація',
+    title: 'Назва',
+    warranty: 'Гарантія',
+    price: 'Ціна',
+    order: 'Замовлення',
+    delete: 'Видалити',
+    close: 'Закрити',
+    cancel: 'Скасувати',
+    confirmDeleteOrder: 'Ви впевнені, що хочете видалити це замовлення?',
+    productsCount: 'Продуктів',
+    specificationValidation: 'Специфікація не належить до обраного типу',
+  },
+} as const
+
+export type Language = keyof typeof translations
+export type TranslationKey = keyof (typeof translations)['en']
