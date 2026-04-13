@@ -64,6 +64,11 @@ const orders = [
     title: 'Order 1',
     date: '2017-06-29 12:09:33',
     description: 'desc',
+    location: {
+      lat: 50.4501,
+      lng: 30.5234,
+      address: 'Kyiv, Ukraine',
+    },
     get products() {
       return products.filter((product) => product.order === this.id)
     },
@@ -73,6 +78,11 @@ const orders = [
     title: 'Order 2',
     date: '2017-06-29 12:09:33',
     description: 'desc',
+    location: {
+      lat: 49.8397,
+      lng: 24.0297,
+      address: 'Lviv, Ukraine',
+    },
     get products() {
       return products.filter((product) => product.order === this.id)
     },
@@ -82,6 +92,11 @@ const orders = [
     title: 'Order 3',
     date: '2017-06-29 12:09:33',
     description: 'desc',
+    location: {
+      lat: 46.4825,
+      lng: 30.7233,
+      address: 'Odesa, Ukraine',
+    },
     get products() {
       return products.filter((product) => product.order === this.id)
     },

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css'
+import 'leaflet/dist/leaflet.css'
 import '../index.css'
 import '../App.css'
 import AppProviders from '../providers/AppProviders'

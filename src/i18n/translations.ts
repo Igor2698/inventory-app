@@ -2,6 +2,7 @@ export const translations = {
   en: {
     brand: 'Inventory',
     dashboard: 'Dashboard',
+    map: 'Map',
     orders: 'Orders',
     products: 'Products',
     search: 'Search',
@@ -20,10 +21,13 @@ export const translations = {
     specificationValidation: 'Specification does not belong to the selected type',
     productsByType: 'Products by type',
     orderValueUsd: 'Order value (USD)',
+    ordersMap: 'Orders map',
+    noMapData: 'No geolocation data for orders',
   },
   uk: {
     brand: 'Склад',
     dashboard: 'Дашборд',
+    map: 'Мапа',
     orders: 'Замовлення',
     products: 'Продукти',
     search: 'Пошук',
@@ -42,6 +46,8 @@ export const translations = {
     specificationValidation: 'Специфікація не належить до обраного типу',
     productsByType: 'Продукти за типами',
     orderValueUsd: 'Сума замовлення (USD)',
+    ordersMap: 'Мапа замовлень',
+    noMapData: 'Немає геоданих для замовлень',
   },
 } as const
 

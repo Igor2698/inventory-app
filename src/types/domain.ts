@@ -29,6 +29,11 @@ export type Order = {
   title: string;
   date: string;
   description?: string;
+  location?: {
+    lat: number;
+    lng: number;
+    address?: string;
+  };
 };
 
 export type RemoveOrderResponse = {

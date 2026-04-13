@@ -30,6 +30,12 @@ const NavigationMenu = () => {
         >
           {t("products")}
         </Link>
+        <Link
+          href="/map"
+          className={`navigation-menu__link ${pathname === "/map" ? "navigation-menu__link--active" : ""}`}
+        >
+          {t("map")}
+        </Link>
       </nav>
     </div>
   );

@@ -181,6 +181,24 @@
   height: 300px;
 }
 
+.orders-map {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.orders-map__title {
+  margin-bottom: 12px;
+}
+
+.orders-map__container {
+  width: 100%;
+  height: 520px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .delete-modal {
   position: fixed;
   inset: 0;
