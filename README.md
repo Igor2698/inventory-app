@@ -49,17 +49,24 @@ NEXT_PUBLIC_API_URL=http://localhost:4000/api
 NEXT_PUBLIC_SOCKET_URL=http://localhost:4000
 ```
 
-## Run in Development
+## Run with Docker (Recommended)
 
 ```bash
-npm run dev
+docker compose up --build
 ```
 
 Runs:
 - frontend: `http://localhost:3000`
 - server and websocket: `http://localhost:4000`
 
-## Build
+## Run Locally (Optional)
+
+```bash
+npm install
+npm run dev
+```
+
+## Build (Local)
 
 ```bash
 npm run build
@@ -71,12 +78,6 @@ npm run build
 - `GET /api/products`
 - `DELETE /api/orders/:id`
 - `POST /api/auth/login`
-
-## Docker
-
-```bash
-docker compose up --build
-```
 
 ## Project Structure
 
