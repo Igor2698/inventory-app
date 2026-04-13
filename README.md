@@ -5,6 +5,7 @@ Test assignment app built with `Next.js` + `Redux Toolkit` + `Socket.io`.
 ## Implemented Features
 
 - `Orders` and `Products` pages with Next.js route-based navigation.
+- `Map` page with order geolocation markers (`react-leaflet` + OpenStreetMap).
 - Component architecture: `NavigationMenu`, `TopMenu`, `Orders`, `Products`.
 - Global state management with `Redux`.
 - SSR-ready app structure with Next.js App Router.
@@ -22,6 +23,7 @@ Test assignment app built with `Next.js` + `Redux Toolkit` + `Socket.io`.
 - Redux Toolkit / React Redux
 - Axios
 - Socket.io / Socket.io-client
+- Leaflet / React Leaflet
 - Bootstrap
 - animate.css
 - Express + CORS
@@ -68,6 +70,7 @@ npm run build
 - `GET /api/orders`
 - `GET /api/products`
 - `DELETE /api/orders/:id`
+- `POST /api/auth/login`
 
 ## Docker
 
@@ -88,8 +91,11 @@ src/
 app/
   layout.jsx
   page.jsx
+  map/page.jsx
   orders/page.jsx
   products/page.jsx
+src/
+  components/maps/
 server/
   index.js
   data.js
@@ -106,3 +112,4 @@ server/
 
 - If orders/products are empty, make sure backend is running on `http://localhost:4000`.
 - If active tabs counter is not updating, verify websocket URL and open app in two browser tabs.
+- If API data looks outdated, check whether port `4000` is occupied by an old Docker container.
