@@ -34,3 +34,11 @@ export type Order = {
 export type RemoveOrderResponse = {
   id: number | string;
 };
+
+export type AuthResponse = {
+  token: string;
+  user: {
+    username: string;
+    role: string;
+  };
+};
