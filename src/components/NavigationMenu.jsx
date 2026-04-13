@@ -13,6 +13,12 @@ const NavigationMenu = () => {
       <div className="navigation-menu__brand">{t("brand")}</div>
       <nav className="navigation-menu__links">
         <Link
+          href="/dashboard"
+          className={`navigation-menu__link ${pathname === "/dashboard" ? "navigation-menu__link--active" : ""}`}
+        >
+          {t("dashboard")}
+        </Link>
+        <Link
           href="/orders"
           className={`navigation-menu__link ${pathname === "/orders" ? "navigation-menu__link--active" : ""}`}
         >

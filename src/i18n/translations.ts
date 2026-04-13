@@ -1,6 +1,7 @@
 export const translations = {
   en: {
     brand: 'Inventory',
+    dashboard: 'Dashboard',
     orders: 'Orders',
     products: 'Products',
     search: 'Search',
@@ -17,9 +18,12 @@ export const translations = {
     confirmDeleteOrder: 'Are you sure you want to delete this order?',
     productsCount: 'Products',
     specificationValidation: 'Specification does not belong to the selected type',
+    productsByType: 'Products by type',
+    orderValueUsd: 'Order value (USD)',
   },
   uk: {
     brand: 'Склад',
+    dashboard: 'Дашборд',
     orders: 'Замовлення',
     products: 'Продукти',
     search: 'Пошук',
@@ -36,6 +40,8 @@ export const translations = {
     confirmDeleteOrder: 'Ви впевнені, що хочете видалити це замовлення?',
     productsCount: 'Продуктів',
     specificationValidation: 'Специфікація не належить до обраного типу',
+    productsByType: 'Продукти за типами',
+    orderValueUsd: 'Сума замовлення (USD)',
   },
 } as const
 
