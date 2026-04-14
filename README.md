@@ -79,6 +79,12 @@ npm run build
 - `DELETE /api/orders/:id`
 - `POST /api/auth/login`
 
+## Database Schema (MySQL Workbench)
+
+- SQL schema file: `db/schema.sql`
+- Quick guide: `db/README.md`
+- You can open `db/schema.sql` in MySQL Workbench via `File -> Open SQL Script...`
+
 ## Project Structure
 
 ```text
@@ -100,6 +106,9 @@ src/
 server/
   index.js
   data.js
+db/
+  schema.sql
+  README.md
 ```
 
 ## Main Scripts
