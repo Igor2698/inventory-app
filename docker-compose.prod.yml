@@ -1,0 +1,13 @@
+services:
+  inventory-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3000:3000"
+      - "4000:4000"
+    environment:
+      - JWT_SECRET=change_me_in_production
+      - NEXT_PUBLIC_API_URL=http://localhost:4000/api
+      - NEXT_PUBLIC_SOCKET_URL=http://localhost:4000
+    restart: unless-stopped
